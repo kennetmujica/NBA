@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  		<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  		<link rel="stylesheet" type="text/css" href="../../../css/videos.css">
+
+  		<script>
+            function regreso(){
+                window.location="../../../index.html";
+            }
+        </script>
+
+        <title>Suns</title>
+    </head>
+
+
+    <body>
+    	<ons-page>
+    	<ons-toolbar>
+		    <div class="center">Phoenix Suns</div>
+		    <div class="left"><ons-back-button onclick="regreso()">Volver</ons-back-button></div>
+		  </ons-toolbar>
+
+		  <ons-tabbar swipeable position="auto">
+		    <ons-tab page="tab1.html" label="Menu" icon="ion-home, material:md-home">
+		    </ons-tab>
+		    <ons-tab page="tab2.html" label="Partidos" icon="beer">
+		    </ons-tab>
+		    <ons-tab page="tab3.html" label="Locacion" icon="heart">
+		  </ons-tabbar>
+		</ons-page>
+
+		<template id="tab1.html">
+		  <ons-page id="Tab1">
+		  	<h2 style="text-align: center;">Suns</h2>
+		    <p style="text-align: center;">
+		      <big>Ir al sitio web de los Suns:</big> 
+    		<ons-toolbar-button onclick=" location.href='https://www.nba.com/suns/' ">Phoenix Suns</ons-toolbar-button><br><br>
+    		<img src="fondo.jpg">
+		    </p>
+
+		  </ons-page>
+		</template>
+
+		<template id="tab2.html">
+		  <ons-page id="Tab2">
+
+		  	<p style="text-align: center;">
+		      	<strong>Proximos 5 partidos</strong><br><br>
+		    	14.11. 20:00	<br>
+				Phoenix Suns<br>
+				San Antonio Spurs<br><br>
+
+				17.11. 20:00	<br>
+				Phoenix Suns<br>
+				Oklahoma City Thunder<br><br>
+				 
+				19.11. 18:00	<br>
+				Philadelphia 76ers<br>
+				Phoenix Suns<br><br>
+				 
+				21.11. 19:00	<br>
+				Chicago Bulls<br>
+				Phoenix Suns<br><br>
+				 
+				23.11. 19:30	<br>
+				Milwaukee Bucks<br>
+				Phoenix Suns<br><br>
+			</p>
+
+		    <p style="text-align: center;">
+		      <strong>Ultimos 5 partidos</strong><br><br>
+		      
+    			12.11. 19:00	<br>
+				Oklahoma City Thunder<br>
+				Phoenix Suns<br>
+				118 : 101	<br><br>
+				 
+				10.11. 18:00	<br>
+				New Orleans Pelicans<br>
+				Phoenix Suns<br>
+				119 : 99	<br><br>
+				 
+				08.11. 20:00	<br>
+				Phoenix Suns<br>
+				Boston Celtics<br>
+				109 : 116<br><br>
+				 
+				06.11. 20:00	<br>
+				Phoenix Suns<br>
+				Brooklyn Nets<br>
+				82 : 104	<br><br>
+				 
+				04.11. 19:00	<br>
+				Phoenix Suns<br>
+				Memphis Grizzlies<br>
+				102 : 100	<br><br>
+
+		    </p>
+
+		    	
+
+		  </ons-page>
+		</template>
+
+		<template id="tab3.html">
+		  <ons-page id="Tab3">
+		    <p style="text-align: center;">
+		    	<BIG>Talking Stick Resort Arena</BIG><br><br>
+		      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13316.548026686589!2d-112.0712006!3d33.4457369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a220f94e2bf245b!2sTalking+Stick+Resort+Arena!5e0!3m2!1ses-419!2smx!4v1542218103422" width="350" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		      <br><br>
+		    </p>
+		</template>
+</ons-page>
+    </body>
+
+
+</html>

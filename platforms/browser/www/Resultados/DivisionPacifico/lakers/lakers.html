@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  		<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  		<link rel="stylesheet" type="text/css" href="../../../css/videos.css">
+
+  		<script>
+            function regreso(){
+                window.location="../../../index.html";
+            }
+        </script>
+
+        <title>Lakers</title>
+    </head>
+
+
+    <body>
+    	<div class="contenedor">
+    	<ons-page>
+    	<ons-toolbar>
+		    <div class="center">Los Angeles Lakers</div>
+		    <div class="left"><ons-back-button onclick="regreso()">Volver</ons-back-button></div>
+		  </ons-toolbar>
+
+		  <ons-tabbar swipeable position="auto">
+		    <ons-tab page="tab1.html" label="Menu" icon="ion-home, material:md-home">
+		    </ons-tab>
+		    <ons-tab page="tab2.html" label="Partidos" icon="beer">
+		    </ons-tab>
+		    <ons-tab page="tab3.html" label="Locacion" icon="heart">
+		    </ons-tab>
+		  </ons-tabbar>
+		</ons-page>
+
+		<template id="tab1.html">
+		  <ons-page id="Tab1">
+		  	<h2 style="text-align: center;">LA Lakers</h2>
+		    <p style="text-align: center;">
+		      <big>Ir al sitio web de los Lakers:</big> 
+    		<ons-toolbar-button onclick=" location.href='https://www.nba.com/lakers/' ">LA Lakers</ons-toolbar-button><br><br>
+    		<img src="fondo.jpg">
+
+		    </p>
+
+
+		  </ons-page>
+		</template>
+
+		<template id="tab2.html">
+		  <ons-page id="Tab2">
+
+		  	<p style="text-align: center;">
+		      	<strong>Proximos 5 partidos</strong><br><br>
+		    	14.11. 21:30	<br>
+				Los Angeles Lakers<br>
+				Portland Trail Blazers<br><br>
+				
+				17.11. 18:00	<br>
+				Orlando Magic<br>
+				Los Angeles Lakers<br><br>
+				 
+				18.11. 17:00	<br>
+				Miami Heat<br>
+				Los Angeles Lakers<br><br>
+				 
+				21.11. 19:00	<br>
+				Cleveland Cavaliers<br>
+				Los Angeles Lakers<br><br>
+				 
+				23.11. 21:30	<br>
+				Los Angeles Lakers<br>
+				Utah Jazz<br><br>
+			</p>
+
+		    <p style="text-align: center;">
+		      <strong>Ultimos 5 partidos</strong><br><br>
+    			11.11. 20:30	<br>
+				Los Angeles Lakers<br>
+				Atlanta Hawks<br>
+				107 : 106	<br><br>
+				 
+				10.11. 21:00	<br>
+				Sacramento Kings<br>
+				Los Angeles Lakers<br>
+				86 : 101	<br><br>
+				 
+				07.11. 21:30	<br>
+				Los Angeles Lakers<br>
+				Minnesota Timberwolves<br>
+				114 : 110	<br><br>
+				 
+				04.11. 20:30	<br>
+				Los Angeles Lakers<br>
+				Toronto Raptors<br>
+				107 : 121	<br><br>
+				 
+				03.11. 20:00	<br>
+				Portland Trail Blazers<br>
+				Los Angeles Lakers<br>
+				110 : 114	<br>
+		    </p>
+
+		    	
+
+		  </ons-page>
+		</template>
+
+		<template id="tab3.html">
+		  <ons-page id="Tab3">
+		    <p style="text-align: center;">
+		    	<BIG>Staples Center</BIG><br><br>
+		      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.033103831304!2d-118.269442785301!3d34.04302192566442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sStaples+Center!5e0!3m2!1ses-419!2smx!4v1542175949924" width="350" height="450" frameborder="0" style="border:0" allowfullscreen></iframe><br><br>
+		    </p>
+		</template>
+</ons-page>
+</div>
+    </body>
+
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  		<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+  		<script>
+            function regreso(){
+                window.location="../../../index.html";
+            }
+        </script>
+
+        <title>Jazz</title>
+    </head>
+
+
+    <body>
+    	<ons-page>
+    	<ons-toolbar>
+		    <div class="center">Utah Jazz</div>
+		    <div class="left"><ons-back-button onclick="regreso()">Volver</ons-back-button></div>
+		  </ons-toolbar>
+
+		  <ons-tabbar swipeable position="auto">
+		    <ons-tab page="tab1.html" label="Menu" icon="ion-home, material:md-home">
+		    </ons-tab>
+		    <ons-tab page="tab2.html" label="Partidos" icon="beer">
+		    </ons-tab>
+		    <ons-tab page="tab3.html" label="Locacion" icon="heart">
+		  </ons-tabbar>
+		</ons-page>
+
+		<template id="tab1.html">
+		  <ons-page id="Tab1">
+		  	<h2 style="text-align: center;">Jazz</h2>
+		    <p style="text-align: center;">
+		      <big>Ir al sitio web de los Jazz:</big> 
+    		<ons-toolbar-button onclick=" location.href='https://www.nba.com/jazz/' ">Jazz</ons-toolbar-button><br><br>
+    		<img src="fondo.jpg" width="500" height="450">
+		    </p>
+			  
+		  </ons-page>
+		</template>
+
+		<template id="tab2.html">
+		  <ons-page id="Tab2">
+
+		  	<p style="text-align: center;">
+		      	<strong>Proximos 5 partidos</strong><br><br>
+				15.11. 19:00	<br>
+				Houston Rockets<br>
+				Golden State Warriors<br><br>
+				 
+				17.11. 19:30	<br>
+				Dallas Mavericks<br>
+				Golden State Warriors<br><br>
+				 
+				18.11. 18:00	<br>
+				San Antonio Spurs<br>
+				Golden State Warriors<br><br>
+				 
+				21.11. 21:30	<br>
+				Golden State Warriors<br>
+				Oklahoma City Thunder<br><br>
+				 
+				23.11. 21:30	<br>
+				Golden State Warriors<br>
+				Portland Trail Blazers<br><br>
+			</p>
+
+		    <p style="text-align: center;">
+		      <strong>Ultimos 5 partidos</strong><br><br>
+    			13.11. 21:30	<br>
+				Golden State Warriors<br>
+				Atlanta Hawks<br>
+				110 : 103	<br><br>
+				 
+				12.11. 21:30	<br>
+				Los Angeles Clippers<br>
+				Golden State Warriors<br>
+				121 : 116<br><br>
+				 
+				10.11. 19:30	<br>
+				Golden State Warriors<br>
+				Brooklyn Nets<br>
+				116 : 100	<br><br>
+				 
+				08.11. 21:30	<br>
+				Golden State Warriors<br>
+				Milwaukee Bucks<br>
+				111 : 134	<br><br>
+				 
+				05.11. 21:30	<br>
+				Golden State Warriors<br>
+				Memphis Grizzlies<br>
+				117 : 101	<br>
+
+		    </p>
+
+		    	
+
+		  </ons-page>
+		</template>
+
+		<template id="tab3.html">
+		  <ons-page id="Tab3">
+		    <p style="text-align: center;">
+		    	<BIG>Vivint Smart Home Arena</BIG><br><br>
+		      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12086.864476980656!2d-111.9010874!3d40.7682681!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf0e545531f11b120!2sEnergySolutions+Arena!5e0!3m2!1ses!2smx!4v1542820474844" width="350" height="450" frameborder="0" style="border:0" allowfullscreen></iframe><br><br>
+		    </p>
+		</template>
+</ons-page>
+    </body>
+
+
+</html>
